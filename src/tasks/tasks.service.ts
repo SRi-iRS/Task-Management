@@ -57,7 +57,7 @@ export class TasksService {
         const task = this.findTaskById(id);
         task.status = status;
         return task;
-        //return this.tasks[elementToRemove];
+        
     }
 
 }
