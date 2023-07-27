@@ -28,7 +28,7 @@ export class TasksController {
 
    @Patch(':id/status')
    updateTask(@Param('id') id : string, @Body('status') status: TasksStatus){
-       console.log("called");
+       console.log("called updateTask");
         return this.taskService.updateStatus(id, status);
    }
 
